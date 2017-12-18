@@ -1,0 +1,9 @@
+version: "2"
+services:
+  webpack:
+    image: "jmfirth/webpack"
+    volumes:
+      - ".:/app"
+    ports:
+      - "8080:8080"
+    command: "webpack-dev-server --inline --progress --host 0.0.0.0"
